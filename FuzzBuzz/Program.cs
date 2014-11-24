@@ -10,6 +10,11 @@ namespace FuzzBuzz
     {
         static void Main(string[] args)
         {
+            for (int i = 1; i < 101; i++)
+            {
+                Console.WriteLine(i.ToString() + " - " + IsFuzzBuzz(i));
+            }
+            Console.ReadKey();
         }
 
         public static string IsFuzzBuzz(int n)
