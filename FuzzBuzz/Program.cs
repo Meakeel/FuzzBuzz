@@ -18,6 +18,10 @@ namespace FuzzBuzz
             {
                 return "Fuzz";
             }
+            if (n % 5 == 0)
+            {
+                return "Buzz";
+            }
 
             return string.Empty;
         }
