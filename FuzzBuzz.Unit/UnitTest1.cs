@@ -1,4 +1,5 @@
 ﻿using System;
+using FuzzBuzz;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace FuzzBuzz.Unit
@@ -7,8 +8,10 @@ namespace FuzzBuzz.Unit
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void FuzzTest()
         {
+            string isFuzzTest = Program.IsFuzzBuzz(3);
+            Assert.AreEqual("Fuzz", isFuzzTest);
         }
     }
 }

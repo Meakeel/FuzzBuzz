@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace FuzzBuzz
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+        }
+
+        public static string IsFuzzBuzz(int n)
+        {
+
+            return string.Empty;
         }
     }
 }
