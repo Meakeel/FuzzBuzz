@@ -19,5 +19,11 @@ namespace FuzzBuzz.Unit
             string isBuzzTest = Program.IsFuzzBuzz(5);
             Assert.AreEqual("Buzz", isBuzzTest);
         }
+        [TestMethod]
+        public void FuzzBuzzTest()
+        {
+            string isFuzzBuzzTest = Program.IsFuzzBuzz(15);
+            Assert.AreEqual("FuzzBuzz", isFuzzBuzzTest);
+        }
     }
 }
