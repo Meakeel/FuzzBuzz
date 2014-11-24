@@ -14,6 +14,10 @@ namespace FuzzBuzz
 
         public static string IsFuzzBuzz(int n)
         {
+            if (n % 3 == 0)
+            {
+                return "Fuzz";
+            }
 
             return string.Empty;
         }
