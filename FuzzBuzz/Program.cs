@@ -14,6 +14,11 @@ namespace FuzzBuzz
 
         public static string IsFuzzBuzz(int n)
         {
+            //Need to check for FuzzBuzz first
+            if (n % 3 == 0 && n % 5 == 0)
+            {
+                return "FuzzBuzz";
+            }
             if (n % 3 == 0)
             {
                 return "Fuzz";
